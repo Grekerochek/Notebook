@@ -1,0 +1,32 @@
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/list_margin_start"
+    android:layout_marginEnd="@dimen/list_margin_start"
+    android:layout_marginTop="@dimen/list_margin_start_id"
+    android:paddingEnd="@dimen/list_margin_start_id"
+    android:paddingStart="@dimen/list_margin_start_id"
+    android:background="@drawable/border">
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/colorGreen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/title"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/colorGreen"
+        android:layout_marginStart="@dimen/list_margin_start_id"
+        app:layout_constraintStart_toEndOf="@id/id"/>
+
+</android.support.constraint.ConstraintLayout>
